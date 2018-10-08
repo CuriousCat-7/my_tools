@@ -7,6 +7,6 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
-conda create --name py3 python=3.6 -y
-echo "alias py3='source activate py3'" >> ~/.bashrc
-
+conda install -y the_silver_searcher  -c anaconda
+conda install -y pytorch torchvision -c pytorch
+conda install -y opencv cffi zip
