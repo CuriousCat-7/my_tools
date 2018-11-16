@@ -20,7 +20,7 @@ cp .vimrc ~/
 cd ~/.vim_runtime/my_plugins
 git clone https://github.com/Valloric/YouCompleteMe.git
 cd YouCompleteMe
-git submodule init
+git submodule update --init --recursive
 python install.py
 cd $there
 
