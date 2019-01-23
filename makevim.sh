@@ -16,11 +16,8 @@ git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 cd $there
 sh ~/.vim_runtime/install_awesome_vimrc.sh:
 cp .vimrc ~/
-# YCM
+# jedi-vim
 cd ~/.vim_runtime/my_plugins
-git clone https://github.com/Valloric/YouCompleteMe.git
-cd YouCompleteMe
-git submodule update --init --recursive
-python install.py
+git clone --recursive https://github.com/davidhalter/jedi-vim.git
 cd $there
 
