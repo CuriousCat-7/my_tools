@@ -1,8 +1,8 @@
-#vim
+# vim
 source makevim.sh
 
-#conda (don't use)
+# conda (don't use)
 source makeconda.sh
 
-#others
+# others
 .bashrc 可以用来参考
