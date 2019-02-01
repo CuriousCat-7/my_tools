@@ -13,5 +13,6 @@ let g:go_version_warning = 0
 set nu
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let autosave=5
+let g:SuperTabDefaultCompletionType = "<c-n>"
 "set foldlevel=99
 "set foldmethod=indent
