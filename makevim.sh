@@ -5,7 +5,7 @@ cd ~/work
 curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 chmod u+x nvim.appimage
 ./nvim.appimage --appimage-extract
-./squashfs-root/usr/bin/nvim
+#./squashfs-root/usr/bin/nvim
 echo "alias vim=$HOME/work/squashfs-root/usr/bin/nvim" >> ~/.bashrc
 cd $there
 mkdir -p ~/.config
