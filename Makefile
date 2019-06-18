@@ -2,12 +2,16 @@
 help:
 	@echo "vim"
 	@echo "neovim"
-	@echo "neovim"
+	@echo "clean-vim"
+	@echo "tmux"
+	@echo "zshell - todo"
+	@echo "miniconda - todo"
+	@echo "${TERM}"
 
 
 vim:
 	cd ~; git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_awesome_vimrc.sh:
+	sh ~/.vim_runtime/install_awesome_vimrc.sh
 	cp .vimrc ~/
 	# jedi-vim
 	cd ~/.vim_runtime/my_plugins ;\
@@ -24,13 +28,19 @@ neovim:
 	mkdir -p ~/.config
 	cp -r nvim ~/.config/
 
+clean-vim:
+	rm -rf ~/.vim_runtime
+	
+clean-tmux:
+	rm -rf ~/.tmux
+
 tmux:
 	source ~/.bashrc
 	if [ -z ${EDITOR} ];then echo "export EDITOR=vim" >> ~/.bashrc; fi
 	if [ ${TERM}!=xterm-256color ];then echo "export TERM=xterm-256color" >> ~/.bashrc;fi
 	cd; git clone https://github.com/gpakosz/.tmux.git; ln -s -f .tmux/.tmux.conf; cp .tmux/.tmux.conf.local .
-	echo "ok; please type:"
-	echo "source ~/.bashrc"
+	@echo "ok; please type:"
+	@echo "source ~/.bashrc"
 
 zshell:
 	pass
