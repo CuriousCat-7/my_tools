@@ -1,4 +1,4 @@
-.PHONY:vim neovim
+.PHONY:vim neovim clean clean-vim clean-tmux conda-zsh conda-miniconda
 help:
 	@echo "vim - config vimrc"
 	@echo "neovim - install neovim"
@@ -6,11 +6,10 @@ help:
 	@echo "clean-vim"
 	@echo "clean-tmux"
 	@echo "tmux - config tmux"
-	@echo "For Need Conda"
+	@echo "---------------"
+	@echo "For things need conda"
 	@echo "conda-zsh - config zsh"
 	@echo "conda-miniconda - todo"
-	@echo "${TERM}"
-
 
 vim:
 	cd ~; git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
