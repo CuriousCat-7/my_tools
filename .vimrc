@@ -14,8 +14,8 @@ set nu
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let autosave=5
 let g:SuperTabDefaultCompletionType = "<c-n>"
-
-" if When pressed <c-d> ，dispaly "Undefined variable: s:timer_id" use:
+let b:autopairs_enabled = 0
+" if dispaly "Undefined variable: s:timer_id" when you pressed <c-d> ，use:
 "let g:loaded_comfortable_motion = 1
 
 
