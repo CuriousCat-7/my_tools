@@ -3,7 +3,7 @@ help:
 	@echo "vim - config vimrc"
 	@echo "neovim - install neovim"
 	@echo "clean - clean vim and tmux"
-	@echo "clean-vim"
+	@echo "clean-vim - rm ~/.vimrc, vim_runtime"
 	@echo "clean-tmux"
 	@echo "tmux - config tmux"
 	@echo "---------------"
@@ -54,6 +54,7 @@ clean:clean-vim clean-tmux
 
 clean-vim:
 	rm -rf ~/.vim_runtime
+	rm ~/.vimrc
 	
 clean-tmux:
 	rm -rf ~/.tmux
