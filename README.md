@@ -2,6 +2,22 @@
 ```
 make
 ```
+然后按照说明做
+
+## 安装vim
+```
+make vim
+```
+
+安装neovim(optional)
+```
+make neovim
+```
+
+不想用make安装
+```
+git reset --hard 3208d71bd16fef3cf08eb781856603c4ef6bdd1e; sh makevim.sh
+```
 
 # vim
 - 安装neovim, 导入github上的vim配置(可以不安装)
