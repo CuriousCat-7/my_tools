@@ -16,7 +16,7 @@ make neovim
 
 不想用make安装
 ```
-git reset --hard 3208d71bd16fef3cf08eb781856603c4ef6bdd1e; sh makevim.sh
+git checkout shell; sh makevim.sh
 ```
 
 # vim
