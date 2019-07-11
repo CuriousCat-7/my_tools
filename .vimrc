@@ -16,7 +16,7 @@ let autosave=5
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let b:autopairs_enabled = 0
 " if dispaly "Undefined variable: s:timer_id" when you pressed <c-d> ，use:
-"let g:loaded_comfortable_motion = 1
+let g:loaded_comfortable_motion = 1
 
 
 "set foldlevel=99
