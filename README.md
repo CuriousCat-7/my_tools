@@ -1,25 +1,31 @@
-# 说明
+# help
 ```
-make
+make help
 ```
-然后按照说明做
+then follow the help
 
-## 安装vim
+# vim
+### vim config
 ```
 make vim
 ```
 
-安装neovim(optional)
+### install neovim(optional)
 ```
 make neovim
 ```
 
-不想用make安装
+### If you do not have make
 ```
 git checkout shell; sh makevim.sh
 ```
 
-# vim
+# what have make vim done
+- install vim config from  https://github.com/amix/vimrc.git (Thanks a lot!)
+- install neovim (optional, for non-administrator user having low vim version)
+- use my .vimrc
+- use jedi
+- **close autoparis**
 - 安装neovim, 导入github上的vim配置(可以不安装)
 - 加入prototxt的vim插件
 - 加入jedi语法补全
