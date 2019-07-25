@@ -19,6 +19,9 @@ vim:
 	cd ~/.vim_runtime/my_plugins ;\
 		git clone --recursive https://github.com/davidhalter/jedi-vim.git ;\
 		git clone https://github.com/ervandew/supertab.git
+	# python-mode
+	cd ~/.vim_runtime/my_plugins ;\
+		git clone --recurse-submodules https://github.com/python-mode/python-mode
 
 neovim:
 	mkdir -p ~/work
