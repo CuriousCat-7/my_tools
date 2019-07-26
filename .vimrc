@@ -18,7 +18,7 @@ let b:autopairs_enabled = 0
 let g:pymode_options_colorcolumn = 0
 " if dispaly "Undefined variable: s:timer_id" when you pressed <c-d> ，use:
 let g:loaded_comfortable_motion = 1
-
+let g:pymode_lint_ignore = ["E501", "E2", "C","W"]
 
 "set foldlevel=99
 "set foldmethod=indent
