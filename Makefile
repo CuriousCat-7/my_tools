@@ -20,12 +20,17 @@ vim:
 		git clone --recursive https://github.com/davidhalter/jedi-vim.git ;\
 		git clone https://github.com/ervandew/supertab.git
 
-python-mode:~/.vim_runtime
-	# python-mode
+~/.vim_runtime/my_plugins/python-mode:~/.vim_runtime
 	cd ~/.vim_runtime/my_plugins ;\
 		git clone --recurse-submodules https://github.com/python-mode/python-mode
 
-neovim:~/.vim_runtime
+~/.vim_runtime/my_plugins/ultisnips:~/.vim_runtime
+	cd ~/.vim_runtime/my_plugins ;\
+		git clone https://github.com/SirVer/ultisnips.git
+
+neovim:~/.vim_runtime/my_plugins/python-mode ~/.vim_runtime/my_plugins/ultisnips
+	if [ -d ~/.config/nvim ];then echo "neo vim has be installed, normally exit" && exit 1; fi
+	pip install neovim
 	mkdir -p ~/work
 	cd ~/work;\
 		curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage;\
@@ -34,8 +39,6 @@ neovim:~/.vim_runtime
 	echo "alias vim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.bashrc
 	mkdir -p ~/.config
 	cp -r nvim ~/.config/
-	$(MAKE) python-mode
-	pip install neovim
 
 tmux:
 	bash -c "source ~/.bashrc"
@@ -60,8 +63,9 @@ conda-tools:
 clean:clean-vim clean-tmux
 
 clean-vim:
-	rm -rf ~/.vim_runtime
-	rm ~/.vimrc
+	-rm -rf ~/.vim_runtime
+	-rm ~/.vimrc
+	-rm -rf ~/.config/nvim
 	
 clean-tmux:
 	rm -rf ~/.tmux
