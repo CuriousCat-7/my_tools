@@ -19,11 +19,13 @@ vim:
 	cd ~/.vim_runtime/my_plugins ;\
 		git clone --recursive https://github.com/davidhalter/jedi-vim.git ;\
 		git clone https://github.com/ervandew/supertab.git
+
+python-mode:~/.vim_runtime
 	# python-mode
 	cd ~/.vim_runtime/my_plugins ;\
 		git clone --recurse-submodules https://github.com/python-mode/python-mode
 
-neovim:
+neovim:~/.vim_runtime
 	mkdir -p ~/work
 	cd ~/work;\
 		curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage;\
@@ -32,6 +34,7 @@ neovim:
 	echo "alias vim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.bashrc
 	mkdir -p ~/.config
 	cp -r nvim ~/.config/
+	pip install neovim
 
 tmux:
 	bash -c "source ~/.bashrc"

@@ -10,9 +10,10 @@ then follow the help
 make vim
 ```
 
-### install neovim(optional)
+### install neovim(optional) and python-mode
 ```
 make neovim
+make python-mode
 ```
 
 ### If you do not have make
