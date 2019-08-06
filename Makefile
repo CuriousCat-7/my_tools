@@ -34,6 +34,7 @@ neovim:~/.vim_runtime
 	echo "alias vim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.bashrc
 	mkdir -p ~/.config
 	cp -r nvim ~/.config/
+	$(MAKE) python-mode
 	pip install neovim
 
 tmux:
