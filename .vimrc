@@ -22,3 +22,16 @@ let g:pymode_lint_ignore = ["E501", "E2", "C","W"]
 
 "set foldlevel=99
 "set foldmethod=indent
+
+"turn off time comsuming plugins
+let g:jedi#completions_enabled = 0
+let g:pymode = 0
+let g:pymode_virtualenv = 0
+let g:pymode_breakpoint = 0
+let g:pymode_folding = 0
+let g:pymode_rope = 0
+let g:pymode_run = 0
+let g:pymode_options_colorcolumn = 0
+let g:pymode_lint_on_write = 1
+""set the complexity check high to essentially disable it
+let g:pymode_lint_options_mccabe = {'complexity': 30}
