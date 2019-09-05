@@ -54,6 +54,7 @@ conda-zsh:
 	echo  "if [ -t 1 ]; then exec zsh; fi" >>~/.bashrc
 
 conda-miniconda:
+	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 	@echo "install the Anaconda or Miniconda by youself !!!"
 
 conda-tools:
