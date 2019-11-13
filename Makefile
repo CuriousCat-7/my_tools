@@ -18,6 +18,10 @@ vim:~/.vim_runtime
 	# jedi-vim
 	cd ~/.vim_runtime/my_plugins &&\
 		git clone --recursive https://github.com/davidhalter/jedi-vim.git
+	# autopep8
+	cd ~/.vim_runtime/my_plugins &&\
+		https://github.com/tell-k/vim-autopep8.git
+	- pip install autopep8
 	# ultisnips
 	cd ~/.vim_runtime/my_plugins &&\
 		git clone https://github.com/SirVer/ultisnips.git
