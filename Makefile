@@ -1,4 +1,5 @@
 .PHONY:vim neovim clean clean-vim clean-tmux conda-zsh conda-miniconda
+
 help:
 	@echo "vim - config vimrc"
 	@echo "neovim - install neovim"
@@ -11,34 +12,38 @@ help:
 	@echo "conda-zsh - config zsh"
 	@echo "conda-miniconda - todo"
 
-vim:
-	cd ~; git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+vim:~/.vim_runtime
 	cp .vimrc ~/
 	# jedi-vim
-	cd ~/.vim_runtime/my_plugins ;\
-		git clone --recursive https://github.com/davidhalter/jedi-vim.git ;\
-		git clone https://github.com/ervandew/supertab.git
-
-~/.vim_runtime/my_plugins/python-mode:~/.vim_runtime
-	cd ~/.vim_runtime/my_plugins ;\
-		git clone --recurse-submodules https://github.com/python-mode/python-mode
-
-~/.vim_runtime/my_plugins/ultisnips:~/.vim_runtime
-	cd ~/.vim_runtime/my_plugins ;\
+	cd ~/.vim_runtime/my_plugins &&\
+		git clone --recursive https://github.com/davidhalter/jedi-vim.git
+	# ultisnips
+	cd ~/.vim_runtime/my_plugins &&\
 		git clone https://github.com/SirVer/ultisnips.git
+	# tabnine
+	cd ~/.vim_runtime/my_plugins &&\
+		git clone --depth 1 https://github.com/zxqfl/tabnine-vim
+	- pip install python-language-server
 
-neovim:~/.vim_runtime/my_plugins/python-mode ~/.vim_runtime/my_plugins/ultisnips
+
+neovim:~/.vim_runtime
 	if [ -d ~/.config/nvim ];then echo "neo vim has be installed, normally exit" && exit 1; fi
 	pip install neovim
 	mkdir -p ~/work
 	cd ~/work;\
-		curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage;\
+		curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage;\
 		chmod u+x nvim.appimage;\
 		./nvim.appimage --appimage-extract;\
-	echo "alias vim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.bashrc
+	echo "alias nvim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.bashrc
 	mkdir -p ~/.config
 	cp -r nvim ~/.config/
+
+
+~/.vim_runtime:
+	cd ~; git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+	sh ~/.vim_runtime/install_awesome_vimrc.sh
+
 
 tmux:
 	bash -c "source ~/.bashrc"
@@ -48,20 +53,24 @@ tmux:
 	@echo "ok; please type:"
 	@echo "source ~/.bashrc"
 
+
 conda-zsh:
 	- bash -c "source deactivate"
 	conda install -c conda-forge zsh -y
 	echo  "if [ -t 1 ]; then exec zsh; fi" >>~/.bashrc
 
+
 conda-miniconda:
 	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 	@echo "install the Anaconda or Miniconda by youself !!!"
+
 
 conda-tools:
 	conda install -y the_silver_searcher zip git-lfs
 	 
 
 clean:clean-vim clean-tmux
+
 
 clean-vim:
 	-rm -rf ~/.vim_runtime
