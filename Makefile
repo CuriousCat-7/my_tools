@@ -22,13 +22,13 @@ vim:~/.vim_runtime
 	- cd ~/.vim_runtime/my_plugins &&\
 		git clone https://github.com/tell-k/vim-autopep8.git
 	- pip install autopep8
-	# ultisnips
-	- cd ~/.vim_runtime/my_plugins &&\
-		git clone https://github.com/SirVer/ultisnips.git
 	# tabnine
 	- cd ~/.vim_runtime/my_plugins &&\
 		git clone --depth 1 https://github.com/zxqfl/tabnine-vim
 	- pip install python-language-server
+	## ultisnips#FIXME
+	#- cd ~/.vim_runtime/my_plugins &&\
+	#	git clone https://github.com/SirVer/ultisnips.git
 
 
 neovim:~/.vim_runtime
