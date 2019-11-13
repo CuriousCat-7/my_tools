@@ -31,7 +31,7 @@ vim:~/.vim_runtime
 	#	git clone https://github.com/SirVer/ultisnips.git
 
 
-neovim:~/.vim_runtime
+neovim:vim
 	if [ -d ~/.config/nvim ];then echo "neo vim has be installed, normally exit" && exit 1; fi
 	pip install neovim
 	mkdir -p ~/work
@@ -40,8 +40,10 @@ neovim:~/.vim_runtime
 		chmod u+x nvim.appimage;\
 		./nvim.appimage --appimage-extract;\
 	echo "alias nvim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.bashrc
+	echo "alias nvim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.zshrc
 	mkdir -p ~/.config
 	cp -r nvim ~/.config/
+	@echo "re-login to use nvim as vim"
 
 
 ~/.vim_runtime:
