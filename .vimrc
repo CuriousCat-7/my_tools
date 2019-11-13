@@ -29,5 +29,8 @@ let g:loaded_comfortable_motion = 1
 " AUTOCOMPLETE
 " disable jedi autp completion and use tabnine
 "let g:jedi#auto_initialization = 0
-let g:jedi#popup_on_dot = 0
 let g:jedi#completions_enabled = 0
+let g:jedi#popup_on_dot = 0
+
+" FOLD
+nmap <leader>t :set foldmethod=indent <cr>
