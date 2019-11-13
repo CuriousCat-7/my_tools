@@ -1,3 +1,13 @@
+# My Tools
+
+** need to be used under python3!!**
+
+If you do not have python3 or you cannot fully control the python package
+
+```
+make miniconda
+```
+
 # help
 ```
 make help
