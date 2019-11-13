@@ -34,5 +34,5 @@ git checkout shell; sh makevim.sh
 - install vim config from  https://github.com/amix/vimrc.git (Thanks a lot!)
 - install neovim (optional, for non-administrator user having low vim version)
 - use my .vimrc
-- use jedi
-- **close autoparis**
+- use jedi tabnine autopep8
+- **close autoparis and other useless features**
