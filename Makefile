@@ -68,7 +68,9 @@ conda-zsh:
 
 miniconda:
 	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-	bash Miniconda3-latest-Linux-x86_64.sh -b -p $(HOME)/miniconda
+	bash Miniconda3-latest-Linux-x86_64.sh -p ${HOME}/miniconda
+	#bash Miniconda3-latest-Linux-x86_64.sh -b -p ${HOME}/miniconda # TODO test this two line
+	#${HOME}/miniconda/bin/conda config --set auto_activate_base true
 
 
 conda-tools:
