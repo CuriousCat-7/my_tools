@@ -59,6 +59,8 @@ tmux:
 	@echo "ok; please type:"
 	@echo "source ~/.bashrc"
 
+zsh:
+	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 conda-zsh:
 	- bash -c "source deactivate"
