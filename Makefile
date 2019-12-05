@@ -39,8 +39,8 @@ neovim:vim
 		curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage;\
 		chmod u+x nvim.appimage;\
 		./nvim.appimage --appimage-extract;\
-	echo "alias nvim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.bashrc
-	echo "alias nvim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.zshrc
+	echo "alias vim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.bashrc
+	echo "alias vim=${HOME}/work/squashfs-root/usr/bin/nvim" >> ~/.zshrc
 	mkdir -p ~/.config
 	cp -r nvim ~/.config/
 	@echo "re-login to use nvim as vim"
@@ -59,8 +59,8 @@ tmux:
 	@echo "ok; please type:"
 	@echo "source ~/.bashrc"
 
-zsh:
-	sh -c "$(shell curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+zsh:conda-zsh
+	sh ohmyzsh.sh
 
 conda-zsh:
 	- bash -c "source deactivate"
