@@ -62,6 +62,10 @@ tmux:
 zsh:conda-zsh
 	sh ohmyzsh.sh
 
+conda-ag:
+	- bash -c "source deactivate"
+	conda  install -c anaconda the-silver-searcher -y
+
 conda-zsh:
 	- bash -c "source deactivate"
 	conda install -c conda-forge zsh -y
