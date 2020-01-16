@@ -2,8 +2,8 @@
 
 ## Pipeline:
 ```
--> Miniconda3 -> vim -> NeoVim
-             |-> conda-zsh -> OhMyZsh
+-> Miniconda3 -> Vim -> NeoVim
+             |-> Zsh -> OhMyZsh
              |-> the_silver_searcher_ag
 
 -> tmux
