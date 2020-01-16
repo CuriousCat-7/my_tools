@@ -6,7 +6,7 @@
              |-> Zsh -> OhMyZsh
              |-> the_silver_searcher_ag
 
--> tmux
+-> .tmux.conf
 ```
 
 ### How to do
@@ -22,7 +22,7 @@ make zsh
 make conda-ag
 ```
 
-Install tmux
+Install .tmux.conf
 ```bash
 make tmux
 ```
