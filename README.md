@@ -1,36 +1,33 @@
 # My Tools
 
-** need to be used under python3!!**
-
-If you do not have python3 or you cannot fully control the python package
-
+## Pipeline:
 ```
+-> Miniconda3 -> vim -> NeoVim
+             |-> conda-zsh -> OhMyZsh
+             |-> the_silver_searcher_ag
+
+-> tmux
+```
+
+### How to do
+
+```bash
 make miniconda
 ```
 
-# help
-```
-make help
-```
-then follow the help
-
-# vim
-### vim config
-```
-make vim
-```
-
-### install neovim(optional) and python-mode
-```
+Re-Login, Then
+```bash
 make neovim
+make zsh
+make conda-ag
 ```
 
-### If you do not have make
-```
-git checkout shell; sh makevim.sh
+Install tmux
+```bash
+make tmux
 ```
 
-# what have make vim done
+## what have make neovim done
 - install vim config from  https://github.com/amix/vimrc.git (Thanks a lot!)
 - install neovim (optional, for non-administrator user having low vim version)
 - use my .vimrc
