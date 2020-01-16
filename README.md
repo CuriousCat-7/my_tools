@@ -12,7 +12,7 @@
 ### How to do
 
 ```bash
-make miniconda
+make miniconda # choose auto init!!!
 ```
 
 Re-Login, Then
