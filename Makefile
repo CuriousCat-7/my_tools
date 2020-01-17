@@ -59,6 +59,9 @@ tmux:
 	@echo "ok; please type:"
 	@echo "source ~/.bashrc"
 
+tmux-lite:
+	cp .tmux.conf ~/
+
 zsh:conda-zsh
 	sh ohmyzsh.sh
 
