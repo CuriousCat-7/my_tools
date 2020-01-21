@@ -72,8 +72,7 @@ conda-ag:
 conda-zsh:
 	- bash -c "source deactivate"
 	conda install -c conda-forge zsh -y
-	# 这行命令很危险
-	# echo  "if [ -t 1 ]; then exec zsh; fi" >>~/.bashrc 
+	 echo  "if [ -t 1 ]; then zsh; fi" >>~/.bashrc 
 
 
 miniconda:
