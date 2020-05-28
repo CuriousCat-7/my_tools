@@ -24,7 +24,7 @@ make conda-ag
 
 Install .tmux.conf
 ```bash
-make tmux
+make tmux-lite
 ```
 
 ## what have make neovim done
