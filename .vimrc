@@ -39,7 +39,7 @@ let g:header_field_timestamp_format = '%Y.%m.%d'
 let g:header_field_modified_by = 0
 let g:header_field_modified_timestamp = 0
 let g:header_field_author = 'limingyao'
-let g:header_field_author_email = 'limingyao128@163.com'
+let g:header_field_author_email = 'limingyao128@gmail.com'
 map <F4> :AddHeader<CR>
 
 " FOLD
