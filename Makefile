@@ -13,6 +13,11 @@ help:
 	@echo "conda-miniconda - todo"
 
 
+~/.vim_runtime:
+	cd ~; git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+	sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+
 vim:~/.vim_runtime
 	cp .vimrc ~/
 	# jedi-vim
@@ -26,6 +31,9 @@ vim:~/.vim_runtime
 	- cd ~/.vim_runtime/my_plugins &&\
 		git clone --depth 1 https://github.com/zxqfl/tabnine-vim
 	- pip install python-language-server
+	# vim-header
+	- cd ~/.vim_runtime/my_plugins &&\
+		git clone https://github.com/alpertuna/vim-header.git
 	## ultisnips#FIXME
 	#- cd ~/.vim_runtime/my_plugins &&\
 	#	git clone https://github.com/SirVer/ultisnips.git
@@ -46,11 +54,6 @@ neovim:vim
 	@echo "re-login to use nvim as vim"
 
 
-~/.vim_runtime:
-	cd ~; git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_awesome_vimrc.sh
-
-
 tmux:
 	bash -c "source ~/.bashrc"
 	if [ -z ${EDITOR} ];then echo "export EDITOR=vim" >> ~/.bashrc; fi
@@ -64,6 +67,7 @@ tmux-lite:
 
 zsh:conda-zsh
 	sh ohmyzsh.sh
+	echo 'Reccomend theme of zsh to  ZSH_THEME="af-magic" '
 
 conda-ag:
 	- bash -c "source deactivate"

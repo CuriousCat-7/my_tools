@@ -32,5 +32,15 @@ let g:loaded_comfortable_motion = 1
 let g:jedi#completions_enabled = 0
 let g:jedi#popup_on_dot = 0
 
+" HEADER
+let g:header_auto_add_header = 0
+let g:header_field_filename = 0
+let g:header_field_timestamp_format = '%Y.%m.%d'
+let g:header_field_modified_by = 0
+let g:header_field_modified_timestamp = 0
+let g:header_field_author = 'limingyao'
+let g:header_field_author_email = 'limingyao128@163.com'
+map <F4> :AddHeader<CR>
+
 " FOLD
 nmap <leader>t :set foldmethod=indent <cr>
