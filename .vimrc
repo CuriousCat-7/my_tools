@@ -45,5 +45,6 @@ map <F4> :AddHeader<CR>
 " FOLD
 nmap <leader>t :set foldmethod=indent <cr>
 
-" TARLIST
-nmap <leader>c :TlistOpen <cr>
+" TARBAR
+let g:tagbar_position = 'left'
+nmap <leader>c :TagbarToggle <cr>
