@@ -44,3 +44,6 @@ map <F4> :AddHeader<CR>
 
 " FOLD
 nmap <leader>t :set foldmethod=indent <cr>
+
+" TARLIST
+nmap <leader>c :TlistOpen <cr>
