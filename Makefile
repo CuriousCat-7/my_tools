@@ -34,6 +34,9 @@ vim:~/.vim_runtime
 	# vim-header
 	- cd ~/.vim_runtime/my_plugins &&\
 		git clone https://github.com/alpertuna/vim-header.git
+	# taglist
+	- cd ~/.vim_runtime/my_plugins &&\
+		git clone https://github.com/yegappan/taglist.git
 	## ultisnips#FIXME
 	#- cd ~/.vim_runtime/my_plugins &&\
 	#	git clone https://github.com/SirVer/ultisnips.git
