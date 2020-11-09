@@ -46,5 +46,6 @@ map <F4> :AddHeader<CR>
 nmap <leader>t :set foldmethod=indent <cr>
 
 " TARBAR
-let g:tagbar_position = 'left'
+"let g:tagbar_width = max([25, winwidth(0) / 5])
+"let g:tagbar_position = 'left'
 nmap <leader>c :TagbarToggle <cr>
