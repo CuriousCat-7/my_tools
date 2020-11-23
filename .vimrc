@@ -49,3 +49,14 @@ nmap <leader>t :set foldmethod=indent <cr>
 "let g:tagbar_width = max([25, winwidth(0) / 5])
 "let g:tagbar_position = 'left'
 nmap <leader>c :TagbarToggle <cr>
+
+" Ctags
+set tags=./tags;
+
+" Setting for C, CPP
+autocmd BufRead,BufNewFile *.h,*.cpp,*.c,*.cc nmap <leader>d g<C-]>
+autocmd BufRead,BufNewFile *.h,*.cpp,*.c,*.cc  setlocal sw=2
+
+
+" highlight NOTE
+autocmd BufRead,BufNewFile * syn keyword   cTodo   contained NOTE
