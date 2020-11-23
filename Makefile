@@ -21,22 +21,17 @@ help:
 vim:~/.vim_runtime
 	cp .vimrc ~/
 	# jedi-vim
-	- cd ~/.vim_runtime/my_plugins &&\
-		git clone --recursive https://github.com/davidhalter/jedi-vim.git
+	- cd ~/.vim_runtime/my_plugins && git clone --recursive https://github.com/davidhalter/jedi-vim.git
 	# autopep8
-	- cd ~/.vim_runtime/my_plugins &&\
-		git clone https://github.com/tell-k/vim-autopep8.git
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/tell-k/vim-autopep8.git
 	- pip install autopep8
 	# tabnine
-	- cd ~/.vim_runtime/my_plugins &&\
-		git clone --depth 1 https://github.com/zxqfl/tabnine-vim
+	- cd ~/.vim_runtime/my_plugins && git clone --depth 1 https://github.com/zxqfl/tabnine-vim
 	- pip install python-language-server
 	# vim-header
-	- cd ~/.vim_runtime/my_plugins &&\
-		git clone https://github.com/alpertuna/vim-header.git
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/alpertuna/vim-header.git
 	# tagbar
-	- cd ~/.vim_runtime/my_plugins &&\
-		git clone https://github.com/preservim/tagbar.git
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/preservim/tagbar.git
 	## ultisnips#FIXME
 	#- cd ~/.vim_runtime/my_plugins &&\
 	#	git clone https://github.com/SirVer/ultisnips.git
