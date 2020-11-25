@@ -61,4 +61,4 @@ The ctags should be installed beforehand, and the file "tags" should be generate
 
 While I have to admit, the VScode can do better than ctags, but this configuration can make you having similar experience.
 
-Or, just use VScode.
+Or, just use VScode (and destroy your fully keyboard writing workflow).
