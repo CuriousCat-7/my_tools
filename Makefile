@@ -18,8 +18,7 @@ help:
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 
-vim:~/.vim_runtime
-	cp .vimrc ~/
+vim-extention:~/.vim_runtime
 	# jedi-vim
 	- cd ~/.vim_runtime/my_plugins && git clone --recursive https://github.com/davidhalter/jedi-vim.git
 	# autopep8
@@ -35,7 +34,11 @@ vim:~/.vim_runtime
 	## ultisnips#FIXME
 	#- cd ~/.vim_runtime/my_plugins &&\
 	#	git clone https://github.com/SirVer/ultisnips.git
+	@echo "installing extention finish"
 
+
+vim:vim-extention
+	cp .vimrc ~/
 
 neovim:vim
 	if [ -d ~/.config/nvim ];then echo "neo vim has be installed, normally exit" && exit 1; fi
