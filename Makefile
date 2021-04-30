@@ -36,6 +36,10 @@ vim-extention:~/.vim_runtime
 	#	git clone https://github.com/SirVer/ultisnips.git
 	@echo "installing extention finish"
 
+vim-other-extention:
+	# sourcetrail
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/CoatiSoftware/vim-sourcetrail.git
+
 
 vim:vim-extention
 	cp .vimrc ~/
