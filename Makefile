@@ -58,6 +58,11 @@ neovim:vim
 	cp -r nvim ~/.config/
 	@echo "re-login to use nvim as vim"
 
+note:
+	@echo "Tabnine for c need clangd, install it by 'sudo apt install clangd-9' and 'sudo ln -s /usr/bin/clangd-9 /usr/bin/clangd'"
+	@echo "Tabnine for python need 'pip install python-language-server', looks need neovim"
+	@echo "If tabnine doesn't work, try restart vim by 'killall -9 vim'"
+
 
 tmux:
 	bash -c "source ~/.bashrc"
