@@ -25,7 +25,7 @@ vim-extention:~/.vim_runtime
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/tell-k/vim-autopep8.git
 	- pip install autopep8
 	# tabnine
-	- cd ~/.vim_runtime/my_plugins && git clone --depth 1 https://github.com/zxqfl/tabnine-vim
+	- cd ~/.vim_runtime/my_plugins && git clone --depth 1 https://github.com/codota/tabnine-vim
 	- pip install python-language-server
 	# vim-header
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/alpertuna/vim-header.git
