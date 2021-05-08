@@ -31,14 +31,20 @@ vim-extention:~/.vim_runtime
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/alpertuna/vim-header.git
 	# tagbar
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/preservim/tagbar.git
-	## ultisnips#FIXME
-	#- cd ~/.vim_runtime/my_plugins &&\
-	#	git clone https://github.com/SirVer/ultisnips.git
+	# indentLine
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/Yggdroot/indentLine.git
+	# fold
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/pseewald/vim-anyfold.git
 	@echo "installing extention finish"
 
 vim-other-extention:
 	# sourcetrail
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/CoatiSoftware/vim-sourcetrail.git
+	# notes
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/xolox/vim-misc.git && git clone https://github.com/xolox/vim-notes.git
+	## ultisnips#FIXME
+	#- cd ~/.vim_runtime/my_plugins &&\
+	#	git clone https://github.com/SirVer/ultisnips.git
 
 
 vim:vim-extention
