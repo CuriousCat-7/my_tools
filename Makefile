@@ -37,6 +37,10 @@ vim-extention:~/.vim_runtime
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/pseewald/vim-anyfold.git
 	@echo "installing extention finish"
 
+vim-experimental-extention:
+	# scrollbar
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/CuriousCat-7/vim-scrollbar.git
+
 vim-other-extention:
 	# sourcetrail
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/CoatiSoftware/vim-sourcetrail.git
