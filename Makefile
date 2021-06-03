@@ -105,6 +105,9 @@ miniconda:
 	#bash Miniconda3-latest-Linux-x86_64.sh -b -p ${HOME}/miniconda # TODO test this two line
 	#${HOME}/miniconda/bin/conda config --set auto_activate_base true
 
+env-setup:
+	cp zshrc_ref/.zshrc ~/
+	#cp -r zshrc_ref/envs ~/ # TODO use it in the future
 
 conda-tools:
 	conda install -y the_silver_searcher zip git-lfs

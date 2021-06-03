@@ -102,7 +102,10 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias condaenv="source ~/envs/conda.sh"
+#alias condaenv="source ~/envs/conda.sh"
+alias condaenv='eval "$(${HOME}/miniconda3/bin/conda shell.zsh hook)"'
+alias dea="conda deactivate"
+alias py37="conda activate py37"
 alias onesync="onedrive --synchronize"
 alias vim=/home/neo/work/squashfs-root/usr/bin/nvim
 alias dockerclean="docker container prune -f;docker image prune -f"
@@ -113,3 +116,4 @@ if [ -n "$(grep /docker /proc/1/cgroup)" ]; then
   export PS1="%F{yellow}(docker:$container_id) $PS1"
   alias vim=/usr/bin/vim
 fi
+alias vim=/home/neo/work/squashfs-root/usr/bin/nvim
