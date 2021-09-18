@@ -73,3 +73,19 @@ autocmd BufRead,BufNewFile *.h,*.cpp,*.c,*.cc  setlocal sw=2
 
 " highlight NOTE
 autocmd BufRead,BufNewFile * syn keyword   cTodo   contained NOTE
+
+"mouse
+"set mouse=a
+
+"search
+nmap <F2> <C-*>
+
+" highlight settings
+:set cursorline
+au BufReadPost *.INFO set syntax=log
+
+" paste to calib
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <C-r><C-o>+

@@ -35,13 +35,14 @@ vim-extention:~/.vim_runtime
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/Yggdroot/indentLine.git
 	# fold
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/pseewald/vim-anyfold.git
+	# highlight
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/MTDL9/vim-log-highlighting.git 
 	@echo "installing extention finish"
 
-vim-experimental-extention:
-	# scrollbar
-	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/CuriousCat-7/vim-scrollbar.git
+vim-extention-experimental:
+	@echo "no experimental extention now"
 
-vim-other-extention:
+vim-extention-other:
 	# sourcetrail
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/CoatiSoftware/vim-sourcetrail.git
 	# notes
@@ -49,6 +50,9 @@ vim-other-extention:
 	## ultisnips#FIXME
 	#- cd ~/.vim_runtime/my_plugins &&\
 	#	git clone https://github.com/SirVer/ultisnips.git
+
+vim-extention-nim:
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/alaviss/nim.nvim.git
 
 
 vim:vim-extention
