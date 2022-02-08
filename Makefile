@@ -100,7 +100,7 @@ conda-ag:
 conda-zsh:
 	- bash -c "source deactivate"
 	conda install -c conda-forge zsh -y
-	 echo  "if [ -t 1 ]; then zsh; fi" >>~/.bashrc 
+	echo "alias zsh='${HOME}/miniconda3/bin/zsh'" >>~/.bashrc 
 
 
 miniconda:
