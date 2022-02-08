@@ -115,6 +115,12 @@ env-setup:
 
 conda-tools:
 	conda install -y the_silver_searcher zip git-lfs
+
+condaenv-bash:
+	cat zshrc_ref/env.sh >> ~/.bashrc
+
+condaenv-zsh:
+	cat zshrc_ref/env.sh >> ~/.zshrc
 	 
 
 clean:clean-vim clean-tmux
