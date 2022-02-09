@@ -24,9 +24,8 @@ vim-extention:~/.vim_runtime
 	# autopep8
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/tell-k/vim-autopep8.git
 	- pip install autopep8
-	# tabnine
-	- cd ~/.vim_runtime/my_plugins && git clone --depth 1 https://github.com/codota/tabnine-vim
-	- pip install python-language-server
+	# auto complete
+	- cd ~/.vim_runtime/my_plugins && https://github.com/ackyshake/VimCompletesMe.git 
 	# vim-header
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/alpertuna/vim-header.git
 	# tagbar
@@ -95,7 +94,7 @@ zsh:conda-zsh
 
 conda-ag:
 	- bash -c "source deactivate"
-	conda  install -c anaconda the-silver-searcher -y
+	conda install -c conda-forge the_silver_searcher -y
 
 conda-zsh:
 	- bash -c "source deactivate"
