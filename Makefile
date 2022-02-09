@@ -110,7 +110,6 @@ miniconda:
 
 env-setup:
 	cp zshrc_ref/.zshrc ~/
-	#cp -r zshrc_ref/envs ~/ # TODO use it in the future
 
 conda-tools:
 	conda install -y the_silver_searcher zip git-lfs
