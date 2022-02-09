@@ -25,7 +25,7 @@ vim-extention:~/.vim_runtime
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/tell-k/vim-autopep8.git
 	- pip install autopep8
 	# auto complete
-	- cd ~/.vim_runtime/my_plugins && https://github.com/ackyshake/VimCompletesMe.git 
+	- cd ~/.vim_runtime/my_plugins && git clone git://github.com/ajh17/VimCompletesMe.git  
 	# vim-header
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/alpertuna/vim-header.git
 	# tagbar
