@@ -36,6 +36,8 @@ vim-extention:~/.vim_runtime
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/pseewald/vim-anyfold.git
 	# highlight
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/MTDL9/vim-log-highlighting.git 
+	# LeaderF
+	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/Yggdroot/LeaderF.git  
 	@echo "installing extention finish"
 
 vim-extention-experimental:
