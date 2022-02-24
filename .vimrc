@@ -92,3 +92,5 @@ imap <C-v> <C-r><C-o>+
 
 " fuzzy search
 nmap <leader>l :LeaderfFile <cr>
+
+nmap <leader><leader> :set relativenumber! <cr>
