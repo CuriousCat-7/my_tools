@@ -50,6 +50,9 @@ filetype plugin indent on " required
 syntax on                 " required
 
 autocmd Filetype * AnyFoldActivate               " activate for all filetypes
+" disable mini display
+set foldcolumn=0 
+
 " or
 " autocmd Filetype <your-filetype> AnyFoldActivate " activate for a specific filetype
 
