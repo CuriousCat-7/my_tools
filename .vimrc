@@ -83,8 +83,11 @@ autocmd BufRead,BufNewFile * syn keyword   cTodo   contained NOTE
 "search
 nmap <F2> <C-*>
 
-" highlight settings
-:set cursorline
+" hightlight cursor setting
+" Enable CursorLine
+set cursorline
+let g:ale_echo_cursor = 0
+" syntax setting settings
 au BufReadPost *.INFO set syntax=log
 
 " paste to calib

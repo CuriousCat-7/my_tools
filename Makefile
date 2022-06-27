@@ -42,6 +42,9 @@ vim-extention:~/.vim_runtime
 
 vim-extention-experimental:
 	@echo "no experimental extention now"
+	#- cd ~/.vim_runtime/my_plugins && git clone https://github.com/jayli/vim-easycomplete.git
+	#- cd ~/.vim_runtime/my_plugins && git clone https://github.com/codota/tabnine-vim.git
+
 
 vim-extention-other:
 	# sourcetrail
