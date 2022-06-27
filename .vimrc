@@ -86,9 +86,14 @@ nmap <F2> <C-*>
 " hightlight cursor setting
 " Enable CursorLine
 set cursorline
-let g:ale_echo_cursor = 0
-" syntax setting settings
-au BufReadPost *.INFO set syntax=log
+function! SilenceWarningAle()
+let g:ale_echo_cursor=0
+endfunction
+function! EnableWarningAle()
+let g:ale_echo_cursor=1
+endfunction
+nnoremap \sw :call SilenceWarningAle()<CR>
+nnoremap \ew :call EnableWarningAle()<CR>
 
 " paste to calib
 vmap <C-c> "+yi
@@ -100,3 +105,9 @@ imap <C-v> <C-r><C-o>+
 nmap <leader>l :LeaderfFile <cr>
 
 nmap <leader><leader> :set relativenumber! <cr>
+
+" syntax setting settings
+au BufReadPost *.INFO set syntax=log
+
+" ale fix
+let b:ale_fixers = ['remove_trailing_lines', 'trim_whitespace', 'clang-format']

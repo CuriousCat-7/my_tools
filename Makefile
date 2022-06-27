@@ -38,6 +38,8 @@ vim-extention:~/.vim_runtime
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/MTDL9/vim-log-highlighting.git 
 	# LeaderF
 	- cd ~/.vim_runtime/my_plugins && git clone https://github.com/Yggdroot/LeaderF.git  
+	# cpp syntax
+	- cd ~/.vim_runtime/my_plugins && git clone --depth=1 https://github.com/bfrg/vim-cpp-modern.git  
 	@echo "installing extention finish"
 
 vim-extention-experimental:
